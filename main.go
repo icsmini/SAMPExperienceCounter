@@ -30,10 +30,12 @@ func main() {
 
 	clearConsole()
 
-	fmt.Println("Ваш уровень: ", flvl)
-	fmt.Println("Ваше количество опыта: ", expirience)
-	fmt.Println("Желаемый уровень: ", lvl)
-	fmt.Println("Вам понадобится ", output, "опыта, или же ", payDaysCount, " PayDay'ев.")
+	fmt.Println("Ваш уровень:", flvl)
+	fmt.Println("Ваше количество опыта:", expirience)
+	fmt.Println("Желаемый уровень:", lvl)
+	fmt.Println("Вам понадобится", output, "опыта, или же", payDaysCount, "PayDay'ев.")
+
+	readUint32FromConsole()
 }
 
 func toExp(level uint32) uint32 {
